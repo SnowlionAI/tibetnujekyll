@@ -11,7 +11,10 @@ De Estse delegatieleden spraken over de parallellen tussen de situatie in Estlan
 
 De Tibetaanse Dag van de Democratie is een belangrijk moment om de invoering van democratie door het Tibetaanse volk te herdenken. De aanwezigheid van internationale delegaties, zoals die uit Estland, benadrukt de wereldwijde steun voor Tibet.
 
-![Parlementslid Juku-Kalle Raid](https://savetibet.nl/wp-content/uploads/2024/09/MP_Juku-Kalle_Raid_the_Chair_of_Tibet_Support_Group_in_Estonian_Parliament_and_Member_of_Foreign_Affairs_Committee_of_Estonian_Parliamen-768x512.jpg)
+![Parlementslid Juku-Kalle Raid]({{ site.baseurl }}/assets/images/juku_kalle_raid.jpg)
+
+<img src="{{ '/assets/images/juku_kalle_raid.jpg' | relative_url }}" alt="Parlementslid Juku-Kalle Raid" />
 
 <sub><sup>Parlementslid Juku-Kalle Raid, voorzitter van de Tibet Support Group in het Estlandse parlement en lid van de commissie buitenlandse zaken van het Estlandse parlement, spreekt de bijeenkomst toe.</sup></sub>
 
+<div style="font-size:9pt">Parlementslid Juku-Kalle Raid, voorzitter van de Tibet Support Group in het Estlandse parlement en lid van de commissie buitenlandse zaken van het Estlandse parlement, spreekt de bijeenkomst toe.</div>
