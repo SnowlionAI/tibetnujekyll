@@ -3,6 +3,7 @@ acronym:          TSG-NL
 description:      We are all about Tibet, Human Rights, Action.
 logo:             omikron.png
 
+baseurl: /tibetnujekyll
 
 collections:
   authors:
