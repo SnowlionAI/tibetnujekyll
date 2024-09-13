@@ -8,7 +8,7 @@ baseurl: /tibetnujekyll
 collections:
   posts:
     output: true
-    permalink: /news/:year/:month/:day/:title.html
+    permalink: /posts/:year/:month/:day/:title.html
   authors:
     output: true
   news:
