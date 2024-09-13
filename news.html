@@ -1,0 +1,17 @@
+---
+layout: default
+title: News
+---
+<h1>News</h1>
+
+
+<ul>
+  {% for n in site.news %}
+    <li>
+      <h2><a href="{{ n.url }}">{{ n.title }}</a></h2>
+      {{ n.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
+

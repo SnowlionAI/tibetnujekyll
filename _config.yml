@@ -1,0 +1,17 @@
+title:            Tibet Support Groep Nederland
+acronym:          TSG-NL
+description:      We are all about Tibet, Human Rights, Action.
+logo:             omikron.png
+
+
+collections:
+  authors:
+    output: true
+  news:
+    output: true
+
+theme:            jekyll-theme-minimal
+
+
+
+

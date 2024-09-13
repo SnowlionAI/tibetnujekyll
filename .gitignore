@@ -1,0 +1,69 @@
+  # Ruby specific
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+**.log
+**.tmp
+**.lock
+**.pid
+**.swp
+**.swo
+**.DS_Store
+
+# Gemfile
+/Gemfile.lock
+
+# Jekyll specific
+_site/
+/.sass-cache/
+/.jekyll-cache/
+/.jekyll-metadata
+
+# Bundler specific
+/.bundle/
+/vendor/bundle/
+/vendor/cache/
+/vendor/rails/
+/vendor/ruby/
+
+# NPM specific (if using Jekyll with JavaScript tooling)
+/node_modules/
+/yarn-error.log
+.yarn-integrity
+.yarnrc.yml
+
+# MacOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Frontmatter cache
+/frontmatter/
+.frontmatter
+
+# Netlify specific
+/netlify-plugins/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Files created by Pygments for highlighting code snippets
+.sass-cache/
+
+# Environment variables file (if using dotenv)
+.env
+
+# Files for specific deployment platforms (optional)
+.DEPLOYMENT_SETTINGS
