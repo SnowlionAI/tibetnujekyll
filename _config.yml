@@ -6,6 +6,9 @@ logo:             omikron.png
 baseurl: /tibetnujekyll
 
 collections:
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title.html
   authors:
     output: true
   news:
