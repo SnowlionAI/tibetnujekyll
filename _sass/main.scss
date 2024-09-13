@@ -9,9 +9,21 @@ nav {
 }
 
 nav a {
+  font-weight: 500; /* Base weight closer to bold */
+  width: 100px;     /* Fixed width to prevent layout shifts */
+  // transition: font-weight 0.3s; /* Smooth transitions */
+}
+
+nav a.active {
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+
+nav {
   font-size:20pt;
 }
 
-nav .active {
+nav a.active {
   color: green;
 }

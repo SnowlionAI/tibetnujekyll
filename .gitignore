@@ -51,6 +51,7 @@ _site/
 # Frontmatter cache
 /frontmatter/
 .frontmatter
+frontmatter.json
 
 # Netlify specific
 /netlify-plugins/
