@@ -3,6 +3,9 @@ layout: news
 title: Parlementaire delegatie uit Estland bezoekt Centraal Tibetaans Bestuur
 datum: 6 September 2024
 ---
+
+<img src="{{ '/assets/images/home_front_1900_400.jpg' | relative_url }}" alt="home_from_image" />
+
 Op de 64e verjaardag van de Tibetaanse Dag van de Democratie werd het Centraal Tibetaans Bestuur in Dharamshala vereerd met het bezoek van een parlementaire delegatie uit Estland. Deze delegatie, onder leiding van parlementslid Juku-Kalle Raid, was speciaal uitgenodigd door de Centraal Tibetaanse Administratie (CTA). Juku-Kalle Raid is voorzitter van de Tibet Support Group in het Estse parlement.
 
 De Estse delegatie bestond uit drie parlementsleden: Juku-Kalle Raid, Karmen Joller en Ester Aruse, met expertise in buitenlandse en sociale zaken. Ze werden vergezeld door Roy Strider, coördinator van de Tibet Support Group, en journalist Aarne Seppel.
@@ -18,3 +21,4 @@ De Tibetaanse Dag van de Democratie is een belangrijk moment om de invoering van
 <sub><sup>Parlementslid Juku-Kalle Raid, voorzitter van de Tibet Support Group in het Estlandse parlement en lid van de commissie buitenlandse zaken van het Estlandse parlement, spreekt de bijeenkomst toe.</sup></sub>
 
 <div style="font-size:9pt">Parlementslid Juku-Kalle Raid, voorzitter van de Tibet Support Group in het Estlandse parlement en lid van de commissie buitenlandse zaken van het Estlandse parlement, spreekt de bijeenkomst toe.</div>
+
