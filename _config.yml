@@ -13,13 +13,20 @@ collections:
     output: true
   news:
     output: true
+  events:
+    output: true
 
-theme:            jekyll-theme-minimal
+# theme:            jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
+notification:
+  show: true
+  message: "Belangrijke aankondiging: Sluit je aan bij onze nieuwe campagne!"
+  link_url: "/kom-in-actie/nieuwe-campagne/"
+  link_text: "Lees meer"
 
 

@@ -1,0 +1,82 @@
+/* Footer Stijlen */
+footer {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media li {
+  margin-bottom: 10px;
+}
+
+.social-media li a {
+  display: flex;
+  align-items: center;
+}
+
+.social-media li a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

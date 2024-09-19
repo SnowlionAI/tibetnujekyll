@@ -8,7 +8,7 @@ title: News
 <ul>
   {% for n in site.news %}
     <li>
-      <h2><a href="{{ site.baseurl }}{{ n.url }}">{{ n.title }}</a></h2>
+      <h2><a href="{{ n.url | relative_url }}">{{ n.title }}</a></h2>
       {{ n.excerpt }}
     </li>
   {% endfor %}

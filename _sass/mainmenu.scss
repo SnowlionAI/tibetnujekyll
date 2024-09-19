@@ -1,0 +1,126 @@
+
+/* Hoofdmenu-stijlen */
+#mainmenu {
+  display: flex;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+#mainmenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mainmenu > ul > li {
+  position: relative;
+  float: left;
+}
+
+#mainmenu > ul > li > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight:bold;
+}
+
+#mainmenu > ul > li > a:hover {
+  background-color: #111;
+  color:white;
+  font-weight:bold;
+}
+
+/* Submenu-stijlen */
+#mainmenu ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Plaatst het submenu direct onder het hoofdmenu */
+  left: 0;
+  background-color: #444;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+#mainmenu ul li:hover > ul {
+  display: block;
+}
+
+#mainmenu ul li ul li {
+  position: relative;
+}
+
+#mainmenu ul li ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+#mainmenu ul li ul li a:hover {
+  background-color: #555;
+}
+
+/* Sub-submenu-stijlen */
+#mainmenu ul li ul li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Plaatst het sub-submenu rechts van het submenu */
+  background-color: #555;
+  min-width: 200px;
+}
+
+#mainmenu ul li ul li:hover > ul {
+  display: block;
+}
+
+/* Responsieve stijlen */
+@media screen and (max-width: 768px) {
+  #mainmenu ul {
+    float: none;
+  }
+
+  #mainmenu > ul > li {
+    float: none;
+  }
+
+  #mainmenu ul li ul {
+    position: static;
+  }
+
+  #mainmenu ul li ul li ul {
+    position: static;
+  }
+
+  #mainmenu ul li ul {
+    display: none;
+  }
+
+  #mainmenu ul li.open > ul {
+    display: block;
+  }
+
+  /* Menu-toggle-knop */
+  #menu-toggle {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Verberg het menu standaard op mobiel */
+  #mainmenu {
+    display: none;
+  }
+
+  /* Toon het menu wanneer het open is */
+  #mainmenu.open {
+    display: block;
+  }
+}

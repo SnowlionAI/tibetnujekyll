@@ -1,7 +1,55 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %} class="active"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
+<!-- Topmenu -->
+<nav id="topmenu">
+  <ul>
+    {% for item in site.data.navigation.topmenu %}
+      <li>
+        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        {% if item.submenu %}
+          <ul>
+            {% for subitem in item.submenu %}
+              <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
+
+<!-- Hoofdmenu -->
+<nav id="mainmenu">
+  <ul>
+    {% for item in site.data.navigation.mainmenu %}
+      <li>
+        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} {% if page.url == item.link %} class="active"{% endif %}</a>
+        {% if item.submenu %}
+          <ul>
+            {% for subitem in item.submenu %}
+              <li>
+                <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                {% if subitem.submenu %}
+                  <ul>
+                    {% for subsubitem in subitem.submenu %}
+                      <li>
+                        <a href="{{ site.baseurl }}{{ subsubitem.url }}">{{ subsubitem.title }}</a>
+                        {% if subsubitem.submenu %}
+                          <ul>
+                            {% for subsubsubitem in subsubitem.submenu %}
+                              <li><a href="{{ site.baseurl }}{{ subsubsubitem.url }}">{{ subsubsubitem.title }}</a></li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+

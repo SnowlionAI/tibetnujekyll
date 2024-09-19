@@ -1,0 +1,38 @@
+<!-- 
+<section class="latest-news">
+  <h2>Laatste Nieuws</h2>
+  
+  <div class="news-container">
+    {% for post in include.newslist limit:include.limit %}
+    <div class="news-item">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        <h3>{{ post.title }}</h3>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <a href="{{ '/nieuws/laatste-nieuws/' | relative_url }}" class="btn btn-secondary">Lees het laatste nieuws</a>
+</section> -->
+
+<section class="latest-news">
+  <h1>Laatste Nieuws</h1>
+  <div class="news-container">
+    {% assign rnews = include.newslist | reverse %}
+    {% for post in include.newslist limit:include.limit%}
+      {% assign mod = forloop.index0 | modulo: include.rowlimit %}
+      {% if mod == 0 %}
+        <div class="news-row">
+      {% endif %}
+          <div class="news-item">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+              <h3>{{ post.title }}</h3>
+            </a>
+          </div>
+      {% if mod == include.rowlimit or forloop.last %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

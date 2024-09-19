@@ -1,0 +1,8 @@
+---
+layout: default
+title: News
+---
+<!-- Latest News Articles -->
+{% assign rnews = site.news | reverse %}
+{% include newslist.html newslist=rnews rowlimit=3 %}
+
