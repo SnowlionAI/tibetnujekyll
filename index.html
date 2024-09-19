@@ -1,107 +1,79 @@
 ---
-layout: default
+layout: home
 title: "Tibet Support Groep Nederland"
 ---
 
-<!-- Optionele notificatie sectie -->
-{% if site.notification %}
-<div class="notification-bar">
-  <p>{{ site.notification.message }}</p>
-  <a href="{{ site.notification.link_url | relative_url }}" class="btn btn-notification">{{ site.notification.link_text }}</a>
-</div>
-{% endif %}
-
 <!-- Hero-sectie met aangepaste grid layout -->
-<section class="hero" style="background-image: url('{{ '/assets/images/hero-background.jpg' | relative_url }}');">
-    <div class="hero-content">
-      <div class="hero-overlay">
-        <div class="hero-inner">
-          <h1>Doorbreek de Stilte voor Tibet</h1>
-          <div class="hero-grid">
-        <!-- Eerste rij: "Waarom" en bijbehorende tekst -->
-        <div class="hero-row">
-          <div class="hero-left">
-            <h2>Waarom</h2>
-          </div>
-          <div class="hero-right">
-            <p>
-              Tibetanen worden het zwijgen opgelegd door een wreed regime. 
-            </p>
-            <p>
-              Ze worden 24 uur per dag, 7 dagen per week in de gaten gehouden, gecontroleerd en onderdrukt. 
-            </p>
-            <p>
-              Ze kunnen niet voor zichzelf spreken, hun stem wordt niet gehoord.
-            </p>
-            <p class="hero-highlight">
+<section class="hero" style="background-image: url('{{ site.home.hero_background | relative_url }}');">
+  <div class="hero-content">
+    <div class="hero-overlay">
+      <div class="hero-inner">
+        <h1>Doorbreek de Stilte voor Tibet</h1>
+        <div class="hero-grid">
+          <!-- Eerste rij: "Waarom" en bijbehorende tekst -->
+          <div class="hero-row">
+            <div class="hero-left">
+              <h2>Waarom</h2>
+            </div>
+            <div class="hero-right">
+              <p>
+                Tibetanen worden het zwijgen opgelegd door een wreed regime.
+              </p>
+              <p>
+                Ze worden 24 uur per dag, 7 dagen per week in de gaten gehouden, gecontroleerd en onderdrukt.
+              </p>
+              <p>
+                Ze kunnen niet voor zichzelf spreken, hun stem wordt niet gehoord.
+              </p>
+              <p class="hero-highlight">
                 Ze zijn niet veilig. Ze hebben onze hulp nodig...
-            </p>
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Tweede rij: "Hoe" en bijbehorende tekst -->
-        <div class="hero-row">
-          <div class="hero-left">
-            <h2>Hoe</h2>
+          <!-- Tweede rij: "Hoe" en bijbehorende tekst -->
+          <div class="hero-row">
+            <div class="hero-left">
+              <h2>Hoe</h2>
+            </div>
+            <div class="hero-right">
+              <p>
+                Door de stilte te doorbreken.
+              </p>
+              <p>
+                Wij kunnen voor hen spreken.
+              </p>
+            </div>
           </div>
-          <div class="hero-right">
-            <p>
-              Door de stilte te doorbreken. 
-            </p>
-            <p>
-              Wij kunnen voor hen spreken.
-            </p>
-          </div>
-        </div>
-        <!-- Derde rij: "Wat u kunt doen" en bijbehorende tekst -->
-        <div class="hero-row">
-          <div class="hero-left">
-            <h2>Wat u kunt doen</h2>
-          </div>
-          <div class="hero-right">
-            <p>
-              Help de stilte te doorbreken.<br>
-            </p>
-            <p>
-              Help hun stemmen te laten horen.<br>
-            </p>
-            <p>
-              Help om China en onze eigen regeringen ter verantwoording te roepen.
-            </p>
-          </div>
+          <!-- Derde rij: "Wat u kunt doen" en bijbehorende tekst -->
+          <div class="hero-row">
+            <div class="hero-left">
+              <h2>Wat u kunt doen</h2>
+            </div>
+            <div class="hero-right">
+              <p>
+                Help de stilte te doorbreken.<br>
+              </p>
+              <p>
+                Help hun stemmen te laten horen.<br>
+              </p>
+              <p>
+                Help om China en onze eigen regeringen ter verantwoording te roepen.
+              </p>
+            </div>
 
+          </div>
+        </div>
+      </div>
+      <!-- Knop -->
+      <div class="hero-row">
+        <div class="hero-left">
+          <!-- Leeg gelaten om uitlijning te behouden -->
+        </div>
+        <div class="hero-right hero-call">
+          <span class="hero-call-text">Besluit ook niet langer te zwijgen:</span>
+          <a href="{{ '/kom-in-actie/' | relative_url }}" class="btn btn-primary">Sluit je aan!</a>
         </div>
       </div>
     </div>
-    <!-- Knop -->
-        <div class="hero-row">
-          <div class="hero-left">
-            <!-- Leeg gelaten om uitlijning te behouden -->
-          </div>
-          <div class="hero-right hero-call">
-            <span class="hero-call-text">Besluit ook niet langer te zwijgen:</span>
-            <a href="{{ '/kom-in-actie/' | relative_url }}" class="btn btn-primary">Sluit je aan!</a>
-          </div>
-        </div>
-    </div>
   </div>
-</section>
-
-<!-- Laatste nieuwsartikelen -->
-{% assign rnews = site.news | reverse %}
-{% include newslist.html newslist=rnews limit=3 rowlimit=3 %}
-
-<!-- Laatste campagnes -->
-<section class="latest-campaigns">
-  <h2>Onze Campagnes</h2>
-  <div class="campaigns-container">
-    {% for campaign in site.campaigns limit:3 %}
-    <div class="campaign-item">
-      <a href="{{ campaign.url | relative_url }}">
-        <img src="{{ campaign.image | relative_url }}" alt="{{ campaign.title }}">
-        <h3>{{ campaign.title }}</h3>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-  <a href="{{ '/kom-in-actie/huidige-campagnes/' | relative_url }}" class="btn btn-secondary">Bekijk al onze campagnes</a>
 </section>

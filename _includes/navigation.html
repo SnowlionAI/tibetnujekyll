@@ -3,11 +3,11 @@
   <ul>
     {% for item in site.data.navigation.topmenu %}
       <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% if item.submenu %}
           <ul>
             {% for subitem in item.submenu %}
-              <li><a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a></li>
+              <li><a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a></li>
             {% endfor %}
           </ul>
         {% endif %}
@@ -21,21 +21,21 @@
   <ul>
     {% for item in site.data.navigation.mainmenu %}
       <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} {% if page.url == item.link %} class="active"{% endif %}</a>
+        <a href="{{ item.url | relative_url }}">{{ item.title }} {% if page.url == item.link %} class="active"{% endif %}</a>
         {% if item.submenu %}
           <ul>
             {% for subitem in item.submenu %}
               <li>
-                <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
                 {% if subitem.submenu %}
                   <ul>
                     {% for subsubitem in subitem.submenu %}
                       <li>
-                        <a href="{{ site.baseurl }}{{ subsubitem.url }}">{{ subsubitem.title }}</a>
+                        <a href="{{ subsubitem.url | relative_url }}">{{ subsubitem.title }}</a>
                         {% if subsubitem.submenu %}
                           <ul>
                             {% for subsubsubitem in subsubitem.submenu %}
-                              <li><a href="{{ site.baseurl }}{{ subsubsubitem.url }}">{{ subsubsubitem.title }}</a></li>
+                              <li><a href="{{ subsubsubitem.url | relative_url }}">{{ subsubsubitem.title }}</a></li>
                             {% endfor %}
                           </ul>
                         {% endif %}

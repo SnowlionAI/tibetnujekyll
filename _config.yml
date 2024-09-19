@@ -30,3 +30,12 @@ notification:
   link_text: "Lees meer"
 
 
+home:
+  title: "Tibet Support Groep Nederland"
+  hero_background: "/assets/images/hero-background.jpg"
+  description: "We are all about Tibet, Human Rights, Action."
+
+  image: "omikron.png"
+  call_to_action:
+    text: "Join us"
+    url: "/join-us/"
