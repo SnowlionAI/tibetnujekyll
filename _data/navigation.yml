@@ -16,14 +16,16 @@ topmenu:
 
 mainmenu:
   - title: "Home"
+    logo: true
+    logo_url: "/assets/images/logos/logo.png"
     url: "/"
-    submenu:
-      - title: "Doneer Nu"
-        url: "/doneer/"
-      - title: "Teken de Petitie"
-        url: "/petitie/"
-      - title: "Word Vrijwilliger"
-        url: "/vrijwilliger/"
+    # submenu:
+    #   - title: "Doneer Nu"
+    #     url: "/doneer/"
+    #   - title: "Teken de Petitie"
+    #     url: "/petitie/"
+    #   - title: "Word Vrijwilliger"
+    #     url: "/vrijwilliger/"
 
   - title: "Waarom Tibet"
     url: "/waarom-tibet/"
@@ -182,7 +184,7 @@ mainmenu:
             url: "/steun-tibet/shop-voor-tibet/winkelwagen/"
 
   - title: "Nieuws"
-    url: "/nieuws/"
+    url: "/nieuws/laatste-nieuws.html"
     submenu:
       - title: "Laatste Nieuws"
         url: "/nieuws/laatste-nieuws.html"
@@ -194,6 +196,7 @@ mainmenu:
         url: "/nieuws/inside-tibet/"
       - title: "Tibet Podcasts"
         url: "/nieuws/tibet-podcasts/"
+  
   - title: "Agenda"
     url: "/agenda/"
     submenu:
@@ -209,8 +212,10 @@ mainmenu:
           - title: "Video's"
             url: "/agenda/media/videos/"
 
-  - title: "Doneer"
+  - title: "Doneer2"
     url: "/doneer/"
+    background: "#ffaa0a"
+
 
   - title: "Shop"
     url: "/shop/"
