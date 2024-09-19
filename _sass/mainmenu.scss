@@ -39,14 +39,17 @@
 
 #mainmenu > ul > li.yellow {
   background: #fab302;
-  color:white;
   font-weight:bold;
 }
 
+#mainmenu > ul > li.yellow a {
+  background: #fab302;
+  color:rgb(8, 153, 211);
+}
+
+
 #mainmenu > ul > li.yellow > a:hover{
   background: #a07301;
-  color:white;
-  font-weight:bold;
 }
 
 
