@@ -2,27 +2,42 @@
 /* Hoofdmenu-stijlen */
 #topmenu {
   display: flex;
-  background-color: #333;
-  font-family: Arial, sans-serif;
+  background-color: $menu-bg-color;
+  font-family: $font-stack;
 }
 
 #topmenu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  padding-left: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 #topmenu > ul > li {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: left;
+  height: 100%;
 }
 
 #topmenu > ul > li > a {
-  display: block;
+  display: flex;
+  align-items:center;
   color: #fff;
   text-decoration: none;
-  padding: 15px 20px;
   font-weight:bold;
+  height: 40px;
+}
+
+#topmenu > ul > li > a > span {
+  padding: 0 20px;
 }
 
 #topmenu > ul > li > a:hover {

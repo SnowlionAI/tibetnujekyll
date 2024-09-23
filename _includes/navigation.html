@@ -3,7 +3,17 @@
   <ul>
     {% for item in site.data.navigation.topmenu %}
     <li>
-      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% if item.url %}
+      <a href="{{ item.url | relative_url }}">
+        {% if item.logo %}
+        <img src="{{ item.logo_url | relative_url }}" alt="{{ item.title }}">
+        {% else %}
+        <span>{{ item.title }}</span>
+        {% endif %}
+      </a>
+      {% else %}
+      <span>{{ item.title }}</span>
+      {% endif %}
       {% if item.submenu %}
       <ul>
         {% for subitem in item.submenu %}
@@ -21,30 +31,39 @@
 <nav id="mainmenu">
   <ul>
     {% for item in site.data.navigation.mainmenu %}
-      {% if page.url==item.url and item.background %}
-      {% assign class='active, yellow' %}
-      {% elsif page.url==item.url %}
-      {% assign class='active' %}
-      {% elsif item.background %}
-      {% assign class='yellow' %}
-      {% else %}
-      {% assign class='' %}
-      {% endif %}
+    {% assign class='' %}
+    {% if page.url==item.url and item.background %}
+    {% assign class='active yellow' %}
+    {% endif %}
+    {% if page.url==item.url %}
+    {% assign class= class | append: ' active' %}
+    {% endif %}
+    {% if item.background %}
+    {% assign class='yellow' %}
+    {% endif %}
     <!-- <li {% if item.background %} style="background:#ffaa0a" {% endif %}> -->
     <li class={{class}}>
-            <a href="{{ item.url | relative_url }}">
+      {% if item.url %}
+      <a href="{{ item.url | relative_url }}">
         {% if item.logo %}
         <img src="{{ item.logo_url | relative_url }}" alt="{{ item.title }}">
         {% else %}
-        {{ item.title }}
+        <span>{{ item.title }}</span>
         {% endif %}
       </a>
+      {% else %}
+      <span>{{ item.title }}</span>
+      {% endif %}
       {% if item.submenu %}
       <ul>
         {% for subitem in item.submenu %}
         <li>
+          {% if subitem.url %}
           <a href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
-          {% if subitem.submenu %}
+          {% else %}
+          <span>{{ subitem.title }}</span>
+          {% endif %}
+          <!-- {% if subitem.submenu %}
           <ul>
             {% for subsubitem in subitem.submenu %}
             <li>
@@ -59,7 +78,7 @@
             </li>
             {% endfor %}
           </ul>
-          {% endif %}
+          {% endif %} -->
         </li>
         {% endfor %}
       </ul>

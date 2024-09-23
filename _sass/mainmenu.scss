@@ -2,54 +2,62 @@
 /* Hoofdmenu-stijlen */
 #mainmenu {
   display: flex;
-  background-color: #333;
-  font-family: Arial, sans-serif;
+  background-color: $menu-bg-color;
+  color: white;
+}
+
+#mainmenu a {
+  color: white;
+  text-decoration: none;
 }
 
 #mainmenu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: center;
-  
+  justify-content: flex-end;
+  align-items: center; 
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
 }
 
 #mainmenu > ul > li {
   position: relative;
-  float: left;
-  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  float: left;
+  height: 100%;
+  // width: 140%;
+  // padding: 0px 20px;
 }
 
 #mainmenu > ul > li > a {
-  display: block;
-  color: #fff;
+  display: flex;
+  align-items:center;
   text-decoration: none;
-  padding: 15px 20px;
-  font-weight:bold;
+  height: 100%;
 }
 
-#mainmenu > ul > li > a:hover {
+#mainmenu > ul > li > a > span {
+  padding: 0 20px;
+}
+
+#mainmenu > ul > li a:hover {
   background-color: #111;
-  color:white;
-  font-weight:bold;
 }
 
 #mainmenu > ul > li.yellow {
-  background: #fab302;
-  font-weight:bold;
+  background: $yellow;
 }
 
 #mainmenu > ul > li.yellow a {
-  background: #fab302;
-  color:rgb(8, 153, 211);
+  background: $yellow;
+  color: $blue;
 }
 
-
 #mainmenu > ul > li.yellow > a:hover{
-  background: #a07301;
+  background: $darkyellow;
 }
 
 

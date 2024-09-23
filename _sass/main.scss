@@ -1,6 +1,12 @@
 
 body {
-  font-family: arial, sans-serif;
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;  
 }
 
 .caption {
