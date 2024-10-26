@@ -3,6 +3,8 @@ layout: default
 title: News
 ---
 <!-- Latest News Articles -->
+<section class="latest-news">
+<h2>Laatste Nieuws</h2>
 {% assign rnews = site.news | reverse %}
 {% include newslist.html newslist=rnews rowlimit=3 %}
-
+</section>

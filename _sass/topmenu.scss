@@ -6,16 +6,24 @@
   font-family: $font-stack;
 }
 
+#topmenu a {
+  text-decoration: none;
+  color: $text-menu-color;
+}
+
+#topmenu span {
+  color: $text-menu-color;
+  padding: 0 20px;
+}
+
+
 #topmenu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  justify-content: flex-end;
   align-items: center; 
   gap: 10px;
-  padding-left: 10px;
-  color: white;
   font-weight: bold;
+  width: 100%;
 }
 
 #topmenu > ul > li {
@@ -35,6 +43,11 @@
   font-weight:bold;
   height: 40px;
 }
+
+#topmenu > ul > li.left {
+  margin-right: auto; 
+}
+
 
 #topmenu > ul > li > a > span {
   padding: 0 20px;

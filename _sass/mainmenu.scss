@@ -3,12 +3,13 @@
 #mainmenu {
   display: flex;
   background-color: $menu-bg-color;
-  color: white;
+  font-family: $font-stack;
+  font-size: $main-menu-font-size;
 }
 
 #mainmenu a {
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
 #mainmenu ul {
@@ -32,6 +33,15 @@
   // padding: 0px 20px;
 }
 
+#mainmenu > ul > li.active > a {
+  color: $red;
+}
+
+#mainmenu > ul > li.left {
+  margin-right: auto; 
+}
+
+
 #mainmenu > ul > li > a {
   display: flex;
   align-items:center;
@@ -46,19 +56,15 @@
 #mainmenu > ul > li a:hover {
   background-color: #111;
 }
+#mainmenu > ul > li.yellow > a:hover{
+  background: $darkyellow;
+}
 
 #mainmenu > ul > li.yellow {
   background: $yellow;
 }
 
-#mainmenu > ul > li.yellow a {
-  background: $yellow;
-  color: $blue;
-}
 
-#mainmenu > ul > li.yellow > a:hover{
-  background: $darkyellow;
-}
 
 
 

@@ -1,10 +1,13 @@
 topmenu:
   - title: "Talen"
+    position: "left"
     submenu:
       - title: "Nederlands"
         url: "/"
       - title: "Engels"
         url: "/en/"
+  - title: "Tibetwinkel"
+    url: "/tibetwinkel/"
   - title: "Blog"
     url: "/blog/"
   - title: "Zoeken"
@@ -20,9 +23,20 @@ topmenu:
 
 mainmenu:
   - title: "Home"
-    logo: true
-    logo_url: "/assets/images/logos/logo.png"
     url: "/"
+    logo: "/assets/images/logos/logo.png"
+    position: "left"
+    page:
+      - section: "Urgent Message"
+      - section: "Hero"
+      - section: "Laatste Nieuws"
+      - section: "Kom in Actie"
+      - section: "Steun Tibet"
+      - section: "Waarom Tibet"
+      - section: "Over Ons"
+      - section: "Nieuwsbrief"
+      - section: "Doneer"
+      - section: "Shop"
     # submenu:
     #   - title: "Doneer Nu"
     #     url: "/doneer/"
@@ -59,16 +73,14 @@ mainmenu:
     submenu:
       - title: "Onze Missie en Visie"
         url: "/over-ons/onze-missie-en-visie.html"
-        submenu:
-          - title: "Visie"
-            url: "/over-ons/onze-missie-en-visie/#visie"
-          - title: "Missie"
-            url: "/over-ons/onze-missie-en-visie/#missie"
+        page:
+          - section: "Visie"
+          - section: "Missie"
       - title: "Ons Werkwijze"
         url: "/over-ons/ons-werk.html"
         submenu:
           - title: "Campagnes en Petities"
-            url: "/over-ons/ons-werk/campagnes-en-petities.html"
+            url: "/over-ons/ons-werk/campagnes.html"
           - title: "Acties"
             url: "/over-ons/ons-werk/acties.html"
           - title: "Lobby en Advocacy"
@@ -155,7 +167,7 @@ mainmenu:
     url: "/steun-tibet.html"
     submenu:
       - title: "Doneer"
-        url: "/steun-tibet/doneer.html"
+        url: "/doneer.html"
         submenu:
           - title: "Eenmalige Donatie"
             url: "/steun-tibet/doneer/eenmalige-donatie.html"
@@ -210,7 +222,7 @@ mainmenu:
 
   - title: "Doneer"
     url: "/doneer.html"
-    background: "#ffaa0a"
+    background: "yellow"
 
 
   - title: "Shop"

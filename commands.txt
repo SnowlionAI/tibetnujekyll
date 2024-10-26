@@ -1,0 +1,104 @@
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+~/.rbenv/bin/rbenv init
+
+rbenv install -l
+~/.rbenv/bin/rbenv init
+
+rbenv install -l
+rbenv --help
+rbenv install 3.1.2
+
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+rbenv install 3.1.2
+
+cd workspaces/
+mkdir ruby
+
+rbenv local 3.1.2
+gem install bundler
+gem install jekyll
+
+jekyll  new myblog
+cd myblog/
+bundle exec jekyll serve
+cd ..
+bundle exec jekyll serve
+cd ..
+ls
+
+mkdir test2
+cd test2
+
+rbenv local 3.1.2
+
+gem install jekyll bundler
+gem env home
+
+bundle init
+code .
+bundle init
+bundle
+jekyll serve
+cd web/
+jekyll serve
+jekyll serve --livereload
+bundle
+jekyll serve --livereload
+exit
+rbenv local 3.1.2
+jekyll serve --livereload
+lsof -i :35729
+bundle
+jekyll serve --livereload
+rvm info
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+~/.rbenv/bin/rbenv init
+cd ..
+ls
+code .
+rbenv install -l
+~/.rbenv/bin/rbenv init
+rbenv install -l
+rbenv --help
+rbenv install 3.1.2
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+rbenv install 3.1.2
+cd workspaces/
+mkdir ruby
+cd ruby/
+mkdir test
+cd test
+rbenv local 3.1.2
+gem install bundler
+gem install jekyll
+jekyll  new myblog
+cd myblog/
+bundle exec jekyll serve
+cd ..
+bundle exec jekyll serve
+cd ..
+ls
+mkdir test2
+cd test2
+rbenv list
+rbenv install -l
+rbenv install -L
+cls
+gem install bundler
+rbenv local 3.1.2
+gem install jekyll bundler
+gem env home
+bundle init
+code .
+bundle init
+bundle
+jekyll serve --livereload
+bundle
+jekyll serve --livereload
+exit
+rbenv local 3.1.2
+jekyll serve --livereload
+lsof -i :4000
+bundle
+jekyll serve --livereload

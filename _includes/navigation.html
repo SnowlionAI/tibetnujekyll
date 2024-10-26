@@ -1,8 +1,17 @@
 <!-- Topmenu -->
 <nav id="topmenu">
-  <ul>
+
+<ul>
     {% for item in site.data.navigation.topmenu %}
-    <li>
+    {% assign class='' %}
+    {% if item.background %}
+    {% assign class= class | append: ' ' | append: item.background %}
+    {% endif %}
+    {% if item.position  %}
+    {% assign class= class | append: ' ' | append: item.position %}
+    {% endif %}
+    {% assign class= class | strip %}
+    <li class="{{class}}">
       {% if item.url %}
       <a href="{{ item.url | relative_url }}">
         {% if item.logo %}
@@ -31,22 +40,25 @@
 <nav id="mainmenu">
   <ul>
     {% for item in site.data.navigation.mainmenu %}
+
     {% assign class='' %}
-    {% if page.url==item.url and item.background %}
-    {% assign class='active yellow' %}
-    {% endif %}
     {% if page.url==item.url %}
     {% assign class= class | append: ' active' %}
     {% endif %}
     {% if item.background %}
-    {% assign class='yellow' %}
+    {% assign class= class | append: ' ' | append: item.background %}
     {% endif %}
+    {% if item.position  %}
+    {% assign class= class | append: ' ' | append: item.position %}
+    {% endif %}
+
+    {% assign class= class | strip %}
     <!-- <li {% if item.background %} style="background:#ffaa0a" {% endif %}> -->
-    <li class={{class}}>
+      <li class="{{class}}">
       {% if item.url %}
       <a href="{{ item.url | relative_url }}">
         {% if item.logo %}
-        <img src="{{ item.logo_url | relative_url }}" alt="{{ item.title }}">
+        <img src="{{ item.logo | relative_url }}" alt="{{ item.title }}">
         {% else %}
         <span>{{ item.title }}</span>
         {% endif %}

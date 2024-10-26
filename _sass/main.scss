@@ -2,10 +2,11 @@
 body {
   font-family: $font-stack;
   color: $text-color;
+  font-size: $font-size;
 }
 
 a {
-  color: $text-color;
+  color: $text-link-color;
   text-decoration: none;  
 }
 
@@ -34,5 +35,4 @@ a {
   text-decoration: none;
   border-radius: 4px;
 }
-
 
